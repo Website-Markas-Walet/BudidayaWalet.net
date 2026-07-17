@@ -1,0 +1,79 @@
+/* Cluster Artikel LMB & Sirip — gaya untuk class bw-*
+ * Dipakai oleh fragmen di articles/. Muat sebagai berkas CSS terpisah,
+ * atau sisipkan sebagai <style> di dalam .entry-content.
+ *
+ * Selector di sini di-scope ke .entry-content mengikuti tema Astra/WordPress.
+ * Kalau situs tujuan memakai pembungkus lain, ganti .entry-content sesuai kelasnya.
+ *
+ * Palet: hijau #278575, biru gelap #051145, latar lembut #f7faf9
+ */
+
+/* Daftar Isi manual */
+.bw-toc {
+  background: #f7faf9;
+  border: 1px solid #d9e6e3;
+  border-left: 4px solid #278575;
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin: 0 0 32px;
+}
+.bw-toc__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #051145;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.bw-toc ol { margin: 0; padding-left: 20px; }
+.bw-toc ol ol { margin: 6px 0 12px; padding-left: 18px; list-style: lower-alpha; }
+.bw-toc li { margin: 6px 0; line-height: 1.5; }
+.bw-toc a { color: #278575; text-decoration: none; }
+.bw-toc a:hover { text-decoration: underline; }
+
+/* Banner CTA */
+.bw-banner { margin: 36px 0; text-align: center; }
+.bw-banner img { max-width: 100%; height: auto; border-radius: 6px; }
+
+/* Diagram + caption */
+.bw-figure { margin: 32px 0; text-align: center; }
+.bw-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+}
+.bw-figure figcaption {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Kotak "Baca juga" */
+.bw-baca-juga {
+  background: #f7faf9;
+  border-left: 4px solid #278575;
+  padding: 14px 18px;
+  margin: 32px 0 0;
+  border-radius: 0 4px 4px 0;
+}
+.bw-baca-juga a { color: #278575; }
+
+/* Atribusi sumber */
+.bw-source {
+  font-style: italic;
+  color: #666;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 16px;
+  margin-top: 36px;
+}
+
+/* Tipografi isi artikel */
+.entry-content h2 { font-size: 28px; line-height: 1.3; margin: 38px 0 14px; scroll-margin-top: 100px; }
+.entry-content h3 { font-size: 20px; line-height: 1.4; margin: 26px 0 10px; scroll-margin-top: 100px; }
+.entry-content p  { margin: 0 0 16px; line-height: 1.8; }
+.entry-content ul { margin: 0 0 16px; padding-left: 22px; line-height: 1.8; }
+.entry-content ul li { margin: 6px 0; }

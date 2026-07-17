@@ -1,0 +1,210 @@
+{
+  "bundle": "artikel-lmb",
+  "versi": "1.0",
+  "judul": "Cluster Artikel LMB & Sirip",
+  "bahasa": "id",
+  "jumlah_artikel": 11,
+  "dibuat": "2026-07-17",
+
+  "sumber": {
+    "buku": "Buku Sukses Budidaya Walet",
+    "penerbit": "Markaswalet",
+    "url": "https://markaswalet.com/",
+    "halaman": "254-272",
+    "catatan": "Setiap artikel WAJIB mencantumkan baris atribusi <p class=\"bw-source\"> dengan nomor halaman spesifiknya. Jangan dihapus."
+  },
+
+  "token": {
+    "keterangan": "Fragmen di articles/ memakai token untuk semua hal yang terikat situs. Ganti SEMUA token sebelum publikasi. Lihat README.md.",
+    "{{IMG}}": "Base path folder gambar di situs tujuan, tanpa slash di akhir. Contoh: /wp-content/uploads/2026/07",
+    "{{CTA_URL}}": "URL halaman layanan/konsultasi situs tujuan. Tujuan konversi utama artikel.",
+    "{{CTA_BANNER}}": "URL gambar banner CTA milik situs tujuan. Banner tidak disertakan di bundle.",
+    "{{CTA_ALT}}": "Teks alt untuk banner CTA.",
+    "{{URL:slug}}": "URL artikel lain dalam cluster ini di situs tujuan. Contoh {{URL:jenis-jenis-lmb}} -> /jenis-jenis-lmb.html"
+  },
+
+  "konvensi": {
+    "gaya_bahasa": "Santai, menyapa pembaca 'Pak Bos'. Pakai ragam lisan: nggak, banget, bikin, ngaruh, disaranin. JANGAN diformalkan.",
+    "judul": "Bergaya pertanyaan atau kejutan, sering diakhiri tanda seru.",
+    "intro": "3-4 kalimat: hook masalah -> kenapa penting -> janji isi artikel.",
+    "penutup": "Rangkuman, bukan informasi baru. Lalu paragraf CTA ke {{CTA_URL}}.",
+    "framing_konsultasi": "Tiap artikel menyelipkan bagian yang menunjukkan antar-subsistem saling mengunci (LMB <-> cahaya <-> ventilasi <-> suara), sehingga perbaikan sepotong-sepotong berisiko. Ini yang mengarahkan pembaca ke CTA.",
+    "klaim_teknis": "Semua angka berasal dari buku (50-70 cm, jarak 50 m, dua tweeter di LMB siku, kayu meranti/mahoni). JANGAN mengarang angka baru.",
+    "daftar_isi": "Fragmen sudah memuat <nav class=\"bw-toc\"> manual dengan anchor. Kalau situs tujuan punya plugin TOC otomatis, hapus nav ini agar tidak dobel.",
+    "entity_html": "Pakai &mdash; &ndash; &ldquo; &rdquo; &lsquo; &rsquo;. Nama latin pakai <em>.",
+    "gambar": {
+      "featured": "1280x720 (16:9). Diagram non-16:9 di-fit utuh di atas kanvas putih, jangan di-crop paksa.",
+      "inline": "Lebar maksimal 1280, jaga rasio asli.",
+      "atribut": "WAJIB tulis width & height yang PERSIS sama dengan dimensi file, agar tidak terjadi pergeseran layout (CLS).",
+      "lazy": "Semua gambar inline pakai loading=\"lazy\". Featured image TIDAK.",
+      "caption": "Semua diagram diakhiri 'Sumber: Internal Markaswalet.'"
+    }
+  },
+
+  "rantai_baca_juga": {
+    "pola": "melingkar: 01 -> 02 -> ... -> 11 -> 01",
+    "catatan": "Setiap artikel menautkan artikel berikutnya lewat <p class=\"bw-baca-juga\">. Rantai harus utuh; kalau ada artikel yang tidak dipublikasikan, alihkan tautannya ke artikel berikutnya yang ada."
+  },
+
+  "artikel": [
+    {
+      "no": "01", "slug": "fungsi-lmb-rumah-burung-walet",
+      "file": "articles/01-fungsi-lmb-rumah-burung-walet.html",
+      "judul": "LMB Cuma Lubang Biasa? Ternyata Ini 4 Fungsi Vitalnya Buat RBW!",
+      "meta_description": "LMB bukan sekadar pintu keluar masuk walet. Kenali 4 fungsi utama LMB pada RBW: akses burung, sirkulasi udara, pencahayaan, dan pengatur kelembapan.",
+      "focus_keyword": "fungsi LMB",
+      "sumber_halaman": "254-255",
+      "featured_image": "images/lmb-rumah-burung-walet.jpg",
+      "featured_alt": "LMB rumah burung walet dilihat dari dalam gedung saat pemasangan tweeter",
+      "baca_juga": "ukuran-dan-bentuk-lmb-ideal"
+    },
+    {
+      "no": "02", "slug": "ukuran-dan-bentuk-lmb-ideal",
+      "file": "articles/02-ukuran-dan-bentuk-lmb-ideal.html",
+      "judul": "Ukuran LMB yang Ideal Berapa Sih? Ini Rekomendasi Tim Riset Markaswalet",
+      "meta_description": "Ukuran LMB ideal 50-70 cm dan kenapa bentuk persegi panjang lebih disarankan dibanding bulat atau oval untuk RBW Pak Bos.",
+      "focus_keyword": "ukuran LMB",
+      "sumber_halaman": "256",
+      "featured_image": "images/lmb-rumah-burung-walet.jpg",
+      "featured_alt": "LMB rumah burung walet dilihat dari dalam gedung saat pemasangan tweeter",
+      "baca_juga": "satu-atau-dua-lmb",
+      "gambar_kurang": "Butuh: detail LMB persegi panjang dengan skala ukuran, dan perbandingan bentuk persegi panjang vs bulat vs oval. Featured masih memakai foto LMB umum."
+    },
+    {
+      "no": "03", "slug": "satu-atau-dua-lmb",
+      "file": "articles/03-satu-atau-dua-lmb.html",
+      "judul": "Satu atau Dua LMB? Ini Panduan Nentuin Jumlah LMB Sesuai Ukuran RBW",
+      "meta_description": "Kapan RBW butuh dua LMB? Kenali 4 keuntungan dua LMB pada gedung besar: kurangi kepadatan, sirkulasi optimal, jalur alternatif, dan jangkauan luas.",
+      "focus_keyword": "jumlah LMB",
+      "sumber_halaman": "256-258",
+      "featured_image": "images/featured-2lmb-2menara.jpg",
+      "featured_alt": "RBW ukuran 8x24 dengan dua LMB pada dua menara terpisah",
+      "baca_juga": "jenis-jenis-lmb"
+    },
+    {
+      "no": "04", "slug": "jenis-jenis-lmb",
+      "file": "articles/04-jenis-jenis-lmb.html",
+      "judul": "Kenal Lebih Dekat 4 Jenis LMB: 1 Sisi, 2 Sisi, Siku, dan Lubang Naga",
+      "meta_description": "Panduan lengkap 4 jenis LMB pada RBW: LMB 1 sisi, LMB 2 sisi, LMB siku, dan LMB lubang naga. Kenali karakter dan kapan waktu tepat memakainya.",
+      "focus_keyword": "jenis LMB",
+      "sumber_halaman": "258-261",
+      "featured_image": "images/featured-jenis-lmb.jpg",
+      "featured_alt": "Desain LMB siku tampak depan pada rumah burung walet",
+      "baca_juga": "tweeter-magnet-pada-lmb",
+      "gambar_kurang": "Bagian 'LMB Lubang Naga' belum punya diagram. Aset bernama 'lubang naga' di Drive ternyata thumbnail marketing berlogo, bukan diagram teknis."
+    },
+    {
+      "no": "05", "slug": "tweeter-magnet-pada-lmb",
+      "file": "articles/05-tweeter-magnet-pada-lmb.html",
+      "judul": "LMB Siku vs LMB Satu Sisi: Berapa Tweeter Magnet yang Harus Dipasang?",
+      "meta_description": "Panduan jumlah dan penempatan tweeter magnet pada LMB siku dan LMB satu sisi agar distribusi suara merata dan walet tertarik masuk RBW.",
+      "focus_keyword": "tweeter magnet LMB",
+      "sumber_halaman": "261-263",
+      "featured_image": "images/featured-tweeter-magnet.jpg",
+      "featured_alt": "Penempatan dua tweeter magnet pada LMB siku tampak depan",
+      "baca_juga": "rekomendasi-suara-lmb-pemula"
+    },
+    {
+      "no": "06", "slug": "rekomendasi-suara-lmb-pemula",
+      "file": "articles/06-rekomendasi-suara-lmb-pemula.html",
+      "judul": "Bingung Pilih Suara di LMB? Pemula Cukup Pakai Suara Inap Saja!",
+      "meta_description": "Rekomendasi Tim Riset Markaswalet untuk pemula: pakai satu jenis suara inap di LMB dulu sebelum bereksperimen dengan kombinasi suara panggil dan tarik.",
+      "focus_keyword": "suara inap LMB",
+      "sumber_halaman": "263",
+      "featured_image": "images/lmb-rumah-burung-walet.jpg",
+      "featured_alt": "LMB rumah burung walet dilihat dari dalam gedung saat pemasangan tweeter",
+      "baca_juga": "penempatan-tweeter-bibir-lmb",
+      "gambar_kurang": "Butuh: tweeter suara inap terpasang pada bibir LMB. Featured masih memakai foto LMB umum."
+    },
+    {
+      "no": "07", "slug": "penempatan-tweeter-bibir-lmb",
+      "file": "articles/07-penempatan-tweeter-bibir-lmb.html",
+      "judul": "Tweeter di Dalam atau di Bibir Luar LMB? Ini Jawaban yang Benar!",
+      "meta_description": "Kenapa tweeter harus dipasang di bibir LMB bagian luar, bukan di dalam? Penjelasan soal pantulan suara, tabrakan frekuensi, dan ketahanan tweeter dari air hujan.",
+      "focus_keyword": "penempatan tweeter LMB",
+      "sumber_halaman": "263-264",
+      "featured_image": "images/featured-tweeter-bibir-lmb.jpg",
+      "featured_alt": "Perbandingan penempatan tweeter yang benar dan salah pada LMB",
+      "baca_juga": "penempatan-arah-lmb"
+    },
+    {
+      "no": "08", "slug": "penempatan-arah-lmb",
+      "file": "articles/08-penempatan-arah-lmb.html",
+      "judul": "Arah LMB Nentuin Nasib RBW: 5 Strategi Penempatan yang Wajib Dipahami",
+      "meta_description": "5 rekomendasi penempatan LMB: menghadap arah datang burung, area pakan, arah sebaliknya burung pulang, pertimbangan cahaya, dan strategi untuk RBW besar.",
+      "focus_keyword": "penempatan LMB",
+      "sumber_halaman": "265-267",
+      "featured_image": "images/featured-arah-lmb.jpg",
+      "featured_alt": "Arah terbaik LMB berdasarkan area pakan dan arah burung walet pulang sore hari",
+      "baca_juga": "faktor-efektivitas-lmb"
+    },
+    {
+      "no": "09", "slug": "faktor-efektivitas-lmb",
+      "file": "articles/09-faktor-efektivitas-lmb.html",
+      "judul": "Ketinggian, Angin, dan Hambatan: 3 Faktor Diam-diam yang Bikin LMB Gagal",
+      "meta_description": "Selain desain dan arah, tiga faktor ini menentukan efektivitas LMB: ketinggian LMB, kecepatan angin, dan hambatan seperti pohon atau bangunan di sekitarnya.",
+      "focus_keyword": "efektivitas LMB",
+      "sumber_halaman": "267-269",
+      "featured_image": "images/featured-hambatan-lmb.jpg",
+      "featured_alt": "Jarak minimal 50 meter antara LMB dan hambatan yang tingginya setara LMB",
+      "baca_juga": "evaluasi-dan-penyesuaian-lmb"
+    },
+    {
+      "no": "10", "slug": "evaluasi-dan-penyesuaian-lmb",
+      "file": "articles/10-evaluasi-dan-penyesuaian-lmb.html",
+      "judul": "RBW Sepi Terus? Begini Cara Evaluasi dan Nyesuaiin LMB Secara Berkala",
+      "meta_description": "Panduan evaluasi berkala efektivitas LMB: memantau jumlah walet masuk, mengamati perilaku di sekitar LMB, dan kapan LMB perlu dipindah atau dimodifikasi.",
+      "focus_keyword": "evaluasi LMB",
+      "sumber_halaman": "269-270",
+      "featured_image": "images/lmb-rumah-burung-walet.jpg",
+      "featured_alt": "LMB rumah burung walet dilihat dari dalam gedung saat pemasangan tweeter",
+      "baca_juga": "material-sirip-rbw",
+      "gambar_kurang": "Butuh: aktivitas burung walet di sekitar LMB pada sore hari. Featured masih memakai foto LMB umum."
+    },
+    {
+      "no": "11", "slug": "material-sirip-rbw",
+      "file": "articles/11-material-sirip-rbw.html",
+      "judul": "Sirip Kayu, Besi, atau Beton? Ini Material Terbaik buat Sarang Walet!",
+      "meta_description": "Perbandingan material sirip RBW: kayu vs besi vs beton. Kenapa kayu jadi rekomendasi utama dan kenapa kayu jati atau ulin justru sebaiknya dihindari.",
+      "focus_keyword": "material sirip RBW",
+      "sumber_halaman": "270-272",
+      "featured_image": "images/featured-sirip-rbw.jpg",
+      "featured_alt": "Denah formasi sirip dan penempatan suara pada rumah burung walet",
+      "baca_juga": "fungsi-lmb-rumah-burung-walet"
+    }
+  ],
+
+  "gambar": {
+    "catatan_dimensi": "Dimensi di bawah adalah dimensi ASLI file. Nilai width/height di fragmen HTML sudah cocok dengan ini. Kalau gambar diproses ulang, perbarui juga atribut di fragmen.",
+    "daftar": {
+      "lmb-rumah-burung-walet.jpg": { "dim": "1280x720", "pakai": "featured 01, 02, 06, 10" },
+      "lmb-pertukaran-udara.jpg": { "dim": "787x838", "pakai": "inline 01" },
+      "rbw-2lmb-2menara.jpg": { "dim": "1111x331", "pakai": "inline 03" },
+      "rbw-2lmb-1menara.jpg": { "dim": "1098x382", "pakai": "inline 03" },
+      "desain-lmb-1-sisi.jpg": { "dim": "814x618", "pakai": "inline 04" },
+      "desain-lmb-2-sisi.jpg": { "dim": "862x604", "pakai": "inline 04" },
+      "desain-lmb-siku.jpg": { "dim": "670x631", "pakai": "inline 04" },
+      "tweeter-magnet-lmb-siku.jpg": { "dim": "876x415", "pakai": "inline 05" },
+      "tweeter-magnet-lmb-1-sisi.jpg": { "dim": "763x390", "pakai": "inline 05" },
+      "penempatan-tweeter-benar-salah.jpg": { "dim": "763x606", "pakai": "inline 07" },
+      "arah-lmb-burung-pulang.jpg": { "dim": "1280x905", "pakai": "inline 08" },
+      "lmb-terlalu-tinggi-angin.jpg": { "dim": "679x433", "pakai": "inline 09" },
+      "hambatan-lmb-jarak-50-meter.jpg": { "dim": "1280x905", "pakai": "inline 09" },
+      "sirip-pada-rbw.jpg": { "dim": "1102x738", "pakai": "inline 11" },
+      "penyerapan-air-liur-kayu.jpg": { "dim": "1218x684", "pakai": "inline 11" },
+      "featured-2lmb-2menara.jpg": { "dim": "1280x720", "pakai": "featured 03" },
+      "featured-jenis-lmb.jpg": { "dim": "1280x720", "pakai": "featured 04" },
+      "featured-tweeter-magnet.jpg": { "dim": "1280x720", "pakai": "featured 05" },
+      "featured-tweeter-bibir-lmb.jpg": { "dim": "1280x720", "pakai": "featured 07" },
+      "featured-arah-lmb.jpg": { "dim": "1280x720", "pakai": "featured 08" },
+      "featured-hambatan-lmb.jpg": { "dim": "1280x720", "pakai": "featured 09" },
+      "featured-sirip-rbw.jpg": { "dim": "1280x720", "pakai": "featured 11" }
+    }
+  },
+
+  "masalah_diketahui": [
+    "Artikel 02, 06, dan 10 belum punya diagram; featured image ketiganya memakai foto LMB yang sama, sehingga thumbnail terlihat kembar di halaman daftar artikel.",
+    "Diagram tweeter (tweeter-magnet-*.jpg, penempatan-tweeter-benar-salah.jpg) tertulis 'Twitter magnet' di file sumbernya. Ini typo dari 'Tweeter'. Perbaiki di file sumber Drive kalau memungkinkan.",
+    "Byline asli 'Rahma Aziz'. Kalau situs tujuan tidak punya halaman author untuknya, tampilkan sebagai teks biasa tanpa tautan agar tidak menghasilkan link mati."
+  ]
+}
