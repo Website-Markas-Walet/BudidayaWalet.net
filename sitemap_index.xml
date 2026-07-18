@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://budidayawalet.net/sitemap-utama.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://budidayawalet.net/sitemap-artikel.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://budidayawalet.net/sitemap-lmb.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://budidayawalet.net/sitemap-sarang-kota.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://budidayawalet.net/sitemap-konsultan-kota.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://budidayawalet.net/sitemap-cuci-kota.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://budidayawalet.net/sitemap-rumah-ukuran.xml</loc>
+  </sitemap>
+</sitemapindex>

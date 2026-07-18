@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cdn-cgi/
+Disallow: /comments/feed/
+Disallow: /feed/
+Disallow: /*/feed/
+
+Sitemap: https://budidayawalet.net/sitemap_index.xml

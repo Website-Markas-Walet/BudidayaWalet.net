@@ -1,0 +1,26 @@
+LANGKAH PASANG SITEMAP + AKTIFKAN INDEX  (budidayawalet.net)
+============================================================
+PENTING: sitemap ini sudah termasuk 12 artikel baru (cluster LMB, dll)
+yang ada di origin/main. Pastikan lokal Anda sudah di-pull dulu.
+
+1. Update lokal & pindah ke branch kerja (Git Bash di folder repo):
+   git checkout main
+   git pull origin main
+   git checkout claude/new-article-creation-j5dyyw 2>/dev/null || git checkout -b claude/new-article-creation-j5dyyw
+
+2. Ekstrak SEMUA isi zip ini ke ROOT folder repo (timpa jika ada):
+   8 file sitemap*.xml + robots.txt + skrip .sh
+
+3. Aktifkan index 39 artikel:
+   bash aktifkan-index-39-artikel.sh      (output: "Sisa halaman noindex: 0")
+
+4. Commit & push:
+   git add -A
+   git commit -m "Tambah sitemap index (8 sub-sitemap, 385 URL) + robots.txt & aktifkan index 39 artikel"
+   git push -u origin claude/new-article-creation-j5dyyw
+
+5. (opsional) buang skrip dari repo: git rm aktifkan-index-39-artikel.sh && git commit -m "hapus skrip" && git push
+
+6. Google Search Console > Sitemaps:
+   - Hapus sitemap lama error/duplikat (sitemap_index.xml lama & versi http://)
+   - Submit: sitemap_index.xml
