@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL}}">
+{{HREFLANG_LINKS}}
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BudidayaWalet.net">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{META_DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+
+<!-- Favicon -->
+<link rel="icon" href="/wp-content/uploads/2021/06/cropped-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2021/06/cropped-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2021/06/cropped-favicon-180x180.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M47PB95');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2869782316576155" crossorigin="anonymous"></script>
+
+<style>
+:root{--accent:#278575;--accent-dark:#1f6a5d;--ink:#051145;--muted:#5b6470;--line:#e4e9e8;--bg-soft:#f7faf9}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Poppins',system-ui,sans-serif;font-size:16px;line-height:1.7;color:var(--ink);background:#fff}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.25;color:var(--ink)}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-dark);text-decoration:underline}
+img{max-width:100%;height:auto}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 6px rgba(5,17,69,.04)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.logo img{display:block;height:40px;width:auto}
+.nav-toggle{display:none}
+.nav-toggle-label{display:none;cursor:pointer;padding:10px;border:0;background:none}
+.nav-toggle-label span,.nav-toggle-label span::before,.nav-toggle-label span::after{content:"";display:block;width:24px;height:2px;background:var(--ink);transition:.2s}
+.nav-toggle-label span::before{transform:translateY(-7px)}
+.nav-toggle-label span::after{transform:translateY(5px)}
+.main-nav ul{list-style:none;margin:0;padding:0}
+.main-nav>ul{display:flex;align-items:center;gap:4px}
+.main-nav a{display:block;padding:10px 14px;color:var(--ink);font-weight:500;font-size:15px;border-radius:6px}
+.main-nav a:hover{color:var(--accent);background:var(--bg-soft);text-decoration:none}
+.main-nav .has-sub{position:relative}
+.main-nav .has-sub>a::after{content:"";display:inline-block;margin-left:6px;border:4px solid transparent;border-top-color:currentColor;vertical-align:middle}
+.main-nav .has-sub>ul{position:absolute;top:100%;left:0;min-width:210px;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px rgba(5,17,69,.1);padding:6px;display:none}
+.main-nav .has-sub:hover>ul,.main-nav .has-sub:focus-within>ul{display:block}
+.main-nav .has-sub>ul a{font-weight:400}
+
+/* Content */
+main{display:block}
+.wrap-content{padding:32px 20px 48px}
+
+/* Footer */
+.site-footer{background:var(--ink);color:#c8cfdd;margin-top:56px;font-size:15px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;padding:48px 20px 32px}
+.site-footer h3{color:#fff;font-family:'Poppins',sans-serif;font-size:16px;font-weight:600;margin:0 0 16px}
+.footer-about img{height:44px;width:auto;margin-bottom:14px}
+.footer-about p{margin:0 0 16px;line-height:1.7}
+.footer-links ul{list-style:none;margin:0;padding:0}
+.footer-links li{margin:0 0 8px}
+.site-footer a{color:#c8cfdd}
+.site-footer a:hover{color:#fff}
+.social{display:flex;gap:10px}
+.social a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(255,255,255,.2);border-radius:50%}
+.social a:hover{background:var(--accent);border-color:var(--accent)}
+.social svg{width:18px;height:18px;fill:currentColor}
+.footer-contact p{margin:0 0 10px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:16px 20px;text-align:center;font-size:13px;color:#95a0b5}
+
+@media(max-width:899px){
+  .nav-toggle-label{display:block}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 8px 24px rgba(5,17,69,.08);padding:8px 12px}
+  .nav-toggle:checked~.main-nav{display:block}
+  .main-nav>ul{flex-direction:column;align-items:stretch;gap:0}
+  .main-nav .has-sub>a::after{float:right;margin-top:8px}
+  .main-nav .has-sub>ul{position:static;display:block;border:0;box-shadow:none;padding:0 0 0 14px;min-width:0}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M47PB95" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/" class="logo" aria-label="BudidayaWalet.net">
+      <img src="/wp-content/uploads/2021/06/cropped-logo-budidayawalet-300x62.png" alt="BudidayaWalet.net" width="196" height="40">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka menu"><span></span></label>
+    <nav class="main-nav" aria-label="Menu utama">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="has-sub">
+          <a href="#layanan">Layanan</a>
+          <ul>
+            <li><a href="/konsultan-walet">Konsultan Walet</a></li>
+            <li><a href="/sarang-walet">Agen Sarang Walet</a></li>
+            <li><a href="/cuci-sarang-walet">Cuci Sarang Walet</a></li>
+          </ul>
+        </li>
+        <li><a href="/our-products">Our Products</a></li>
+        <li><a href="/tentang-kami">Tentang Kami</a></li>
+        <li><a href="/kontak-kami">Kontak Kami</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+{{CONTENT}}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-about">
+      <img src="/wp-content/uploads/2021/06/logo-budidayawalet-putih-footer-300x64.png" alt="BudidayaWalet.net">
+      <p>BudidayaWalet.net merupakan perusahaan yang menangani konsultasi budidaya walet dengan metode teruji untuk meningkatkan populasi walet secara signifikan.</p>
+      <div class="social">
+        <a href="https://www.facebook.com/markaswalet/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.5-1.5h1.6V3.6c-.8-.1-1.6-.15-2.4-.15-2.4 0-4 1.45-4 4.1v2.3H7.6V13h2.5v8z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCUV9bwNP8x8tsWXUKbf3ugA" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5zM9.6 15.6V8.4l6.2 3.6z"/></svg>
+        </a>
+        <a href="https://wa.me/6285235350662?text=Halo%20BudidayaWalet.net,%20saya%20membutuhkan%20info%20mengenai%20layanan%20konsultasi%20walet." target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.64.15-.19.28-.73.94-.9 1.13-.16.19-.33.21-.61.07-1.7-.85-2.8-1.5-3.9-3.4-.3-.5.3-.47.83-1.56.09-.19.05-.35-.02-.49-.07-.14-.64-1.53-.87-2.1-.23-.55-.46-.48-.64-.48h-.55c-.19 0-.5.07-.76.35-.26.28-1 .98-1 2.4s1.02 2.78 1.16 2.97c.14.19 2 3.05 4.85 4.28 1.8.78 2.5.85 3.4.72.55-.08 1.7-.7 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33zM12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.16l-.3-.18-2.9.9.92-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/konsultan-walet">Konsultan Walet</a></li>
+        <li><a href="/sarang-walet">Agen Sarang Walet</a></li>
+        <li><a href="/cuci-sarang-walet">Cuci Sarang Walet</a></li>
+        <li><a href="/our-products">Our Products</a></li>
+        <li><a href="/tentang-kami">Tentang Kami</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Kontak</h3>
+      <p>WhatsApp:<br><a href="https://wa.me/6285235350662">0852 3535 0662 (Fairuz)</a></p>
+      <p><a href="/kontak-kami">Hubungi Kami &rarr;</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">&copy; BudidayaWalet.net &middot; Dikembangkan oleh Lusmo Digital</div>
+  </div>
+</footer>
+</body>
+</html>
